@@ -1,0 +1,42 @@
+# Next.js
+.next/
+out/
+
+# ビルド出力
+build
+dist
+
+# 依存関係
+node_modules/
+
+# 環境変数
+.env*.local
+
+# ログ
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEとエディタ
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+
+# キャッシュとバックアップ
+*.log
+*.bak
+*.tmp
+*.temp
+
+# テスト関連
+coverage/
+
+# その他
+.vercel
+*.tsbuildinfo
+next-env.d.ts
