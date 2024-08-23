@@ -1,6 +1,5 @@
 import React, { useCallback } from "react";
 import { useConnect, useAccount, useDisconnect } from "wagmi";
-import kyuzanLogo from "../../public/kyuzan-logo.png";
 import Image from "next/image";
 import StyledButton from "@/styles/StyledButton";
 
