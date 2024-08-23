@@ -6,15 +6,17 @@ import { KyuzanWalletButton } from "@/components/PolarisWalletButton";
 import { SignMessage } from "@/components/SignMessage";
 import { KomyX } from "@/components/PolarisX";
 import { MintNFT } from "@/components/MintNFT";
-import Header from "@/app/Header"; // ヘッダーをインポート
-import Footer from "@/app/Footer"; // フッターをインポート
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { SendPolarisToken } from "@/components/SendPolarisToken";
+import { OwnedNfts } from "@/components/OwnedNfts";
 
 function App() {
   const account = useAccount();
-  const [showSignMessage, setShowSignMessage] = useState(false);
+  const [isShowSignMessage, setIsShowSignMessage] = useState(false);
 
   const toggleSignMessage = () => {
-    setShowSignMessage((prev) => !prev);
+    setIsShowSignMessage((prev) => !prev);
   };
 
   return (
@@ -26,7 +28,7 @@ function App() {
         minHeight: "100vh",
       }}
     >
-      <Header /> {/* ヘッダーを追加 */}
+      <Header />
       <div
         style={{
           display: "flex",
@@ -41,15 +43,17 @@ function App() {
           <>
             <div style={{ marginTop: "40px" }}>
               <MintNFT />
+              <SendPolarisToken />
+              <OwnedNfts />
             </div>
             <div style={{ marginTop: "40px" }}>
               <button onClick={toggleSignMessage}>
-                {showSignMessage
+                {isShowSignMessage
                   ? "(optional) Hide Sign Message"
                   : "(optional) Show Sign Message"}
               </button>
             </div>
-            {showSignMessage && (
+            {isShowSignMessage && (
               <div style={{ marginTop: "10px" }}>
                 <SignMessage />
               </div>
@@ -60,10 +64,9 @@ function App() {
           <KomyX />
         </div>
       </div>
-      <Footer /> {/* フッターを追加 */}
+      <Footer />
     </div>
   );
 }
 
 export default App;
-

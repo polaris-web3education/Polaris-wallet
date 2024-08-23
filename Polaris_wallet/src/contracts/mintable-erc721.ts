@@ -1,7 +1,7 @@
 import { Abi } from "viem";
 
 export const address: `0x${string}` =
-  "0x8B48405Dd587DdCe8F787eDeDC157C6C72a479Cb";
+  "0x35B9B2B23f01452eab2095d074966F99A1d1aAd0";
 
 export const abi: Abi = [
   { inputs: [], stateMutability: "nonpayable", type: "constructor" },
