@@ -5,7 +5,7 @@ import {
   useReadContracts,
 } from "wagmi";
 import StyledButton from "../styles/StyledButton";
-import kyuzanLogo from "../../public/Polaris.png";
+import kyuzanLogo from "../../public/kyuzan-logo.png";
 import Image from "next/image";
 import { abi, address } from "@/contracts/mintable-erc721";
 import { useState, useEffect } from "react";
