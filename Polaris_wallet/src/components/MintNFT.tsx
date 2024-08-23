@@ -5,7 +5,6 @@ import {
   useReadContracts,
 } from "wagmi";
 import StyledButton from "../styles/StyledButton";
-import kyuzanLogo from "../../public/Polaris.png";
 import Image from "next/image";
 import { abi, address } from "@/contracts/mintable-erc721";
 import { useState, useEffect } from "react";
@@ -91,13 +90,7 @@ export function MintNFT() {
           );
         }}
       >
-        <Image
-          src={kyuzanLogo}
-          alt="Kyuzan Logo"
-          width={24}
-          height={24}
-          style={{ marginRight: "6px" }}
-        />
+      
         2. Mint NFT
       </StyledButton>
       <div style={{ marginRight: "30px" }}>

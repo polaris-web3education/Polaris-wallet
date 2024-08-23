@@ -3,7 +3,7 @@ import type { Hex } from "viem";
 import { useAccount, usePublicClient, useSignMessage } from "wagmi";
 import { SiweMessage } from "siwe";
 import StyledButton from "../styles/StyledButton";
-import kyuzanLogo from "../../public/kyuzan-logo.png";
+
 import Image from "next/image";
 
 export function SignMessage() {
@@ -49,11 +49,7 @@ export function SignMessage() {
         onClick={() => signMessage({ message: message.prepareMessage() })}
       >
         <Image
-          src={kyuzanLogo}
-          alt="Kyuzan Logo"
-          width={24}
-          height={24}
-          style={{ marginRight: "6px" }}
+         
         />
         Sign the message
       </StyledButton>
