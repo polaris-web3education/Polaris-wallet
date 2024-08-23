@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-wagmi
 Clone the repository, install dependencies, and run the development server:
 
 ```bash
-git git@github.com:polaris-web3education/Polaris-wallet.git
+git clone git@github.com:polaris-web3education/Polaris-wallet.git
 cd Polaris-wallet
 pnpm install
 pnpm run dev
