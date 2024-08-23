@@ -3,12 +3,12 @@ export function KomyX() {
     <div style={{ textAlign: "center" }}>
       created by
       <a
-        href="https://x.com/ryoheikomy"
+        href="https://x.com/Shibuya_Polaris"
         target="_blank"
         rel="noopener noreferrer"
         style={{ marginLeft: "8px" }}
       >
-        Komy | Kyuzan
+        Polaris
       </a>
     </div>
   );
