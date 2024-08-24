@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import type { Hex } from "viem";
 import { useAccount, usePublicClient, useSignMessage } from "wagmi";
 import { SiweMessage } from "siwe";
-import Button from "./Button";
+import {Button} from "./Button";
 
 export function SignMessage() {
   const account = useAccount();

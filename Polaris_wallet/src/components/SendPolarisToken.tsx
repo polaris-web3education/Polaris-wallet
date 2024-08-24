@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAccount, useWriteContract, useReadContract } from "wagmi";
 import { erc20Abi, parseEther } from "viem";
-import Button from "./Button";
+import { Button } from "./Button";
 
 export const SendPolarisToken = () => {
   const [recipient, setRecipient] = useState("");
@@ -10,7 +10,7 @@ export const SendPolarisToken = () => {
 
   const tokenAddress = "0xAaf6A734114437b719c28cfd44c0b2B515eD29be"; // Polarisトークンのコントラクトアドレスを設定してください
 
-  const { writeContract } = useWriteContract();
+  const { writeContract, isError } = useWriteContract();
 
   const { data: balance } = useReadContract({
     address: tokenAddress,
@@ -29,12 +29,14 @@ export const SendPolarisToken = () => {
         functionName: "transfer",
         args: [recipient as `0x${string}`, parseEther(amount)],
       });
-      alert("送金が完了しました");
     } catch (error) {
       console.error("送金エラー:", error);
-      alert("送金に失敗しました");
     }
   };
+
+  if (isError) {
+    alert("送金に失敗しました");
+  }
 
   return (
     <div>
