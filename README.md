@@ -1,11 +1,14 @@
-Polaris-wallet
-This is a Next.js project bootstrapped with create-wagmi.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-wagmi`](https://github.com/wevm/wagmi/tree/main/packages/create-wagmi).
 
-Getting Started
+## Getting Started
+
 Clone the repository, install dependencies, and run the development server:
 
-git clone git@github.com:polaris-web3education/Polaris-wallet.git
+```bash
+git git@github.com:polaris-web3education/Polaris-wallet.git
 cd Polaris-wallet
 pnpm install
-pnpm run build
-Access the application by navigating to http://localhost:3000 in your browser.
+pnpm run dev
+```
+
+Access the application by navigating to `http://localhost:3000` in your browser.
