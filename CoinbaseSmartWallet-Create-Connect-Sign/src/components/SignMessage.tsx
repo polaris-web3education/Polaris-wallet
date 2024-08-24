@@ -3,7 +3,7 @@ import type { Hex } from "viem";
 import { useAccount, usePublicClient, useSignMessage } from "wagmi";
 import { SiweMessage } from "siwe";
 import StyledButton from "../styles/StyledButton";
-import kyuzanLogo from "../../public/kyuzan-logo.png";
+import PolarisLogo from "../../public/Polaris-logo.png";
 import Image from "next/image";
 
 export function SignMessage() {
