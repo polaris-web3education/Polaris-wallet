@@ -23,8 +23,8 @@ export function KyuzanWalletButton() {
     <>
       <Button onClick={createOrConnectCoinbaseSmartWallet}>
         {isConnected
-          ? "1. Wallet Connected"
-          : "1. Create Wallet / Connect Wallet"}
+          ? "Wallet Connected"
+          : "Create Wallet / Connect Wallet"}
       </Button>
       {status === "connected" && (
         <>
