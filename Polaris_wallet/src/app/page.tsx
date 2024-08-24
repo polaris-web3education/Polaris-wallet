@@ -39,7 +39,7 @@ function App() {
           flex: 1,
         }}
       >
-        <KyuzanWalletButton />
+        <PolarisWalletButton />
         {account.status === "connected" && (
           <>
             <div style={{ marginTop: "40px" }}>
@@ -62,7 +62,7 @@ function App() {
           </>
         )}
         <div style={{ marginTop: "40px" }}>
-          <KomyX />
+          <PolarisX />
         </div>
       </div>
       <Footer />
