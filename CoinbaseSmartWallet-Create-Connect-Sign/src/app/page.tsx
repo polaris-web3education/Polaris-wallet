@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { useAccount } from "wagmi";
-import { KyuzanWalletButton } from "@/components/KyuzanWalletButton";
+import { PolarisWalletButton } from "@/components/KyuzanWalletButton";
 import { SignMessage } from "@/components/SignMessage";
-import { KomyX } from "@/components/KomyX";
+import { PolarisX } from "@/components/PolarisX";
 import { MintNFT } from "@/components/MintNFT";
 
 function App() {
