@@ -10,6 +10,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SendPolarisToken } from "@/components/SendPolarisToken";
 import { OwnedNfts } from "@/components/OwnedNfts";
+import { Button } from "@/components/Button";
 
 function App() {
   const account = useAccount();
@@ -47,11 +48,11 @@ function App() {
               <OwnedNfts />
             </div>
             <div style={{ marginTop: "40px" }}>
-              <button onClick={toggleSignMessage}>
+              <Button onClick={toggleSignMessage}>
                 {isShowSignMessage
                   ? "(optional) Hide Sign Message"
                   : "(optional) Show Sign Message"}
-              </button>
+              </Button>
             </div>
             {isShowSignMessage && (
               <div style={{ marginTop: "10px" }}>
