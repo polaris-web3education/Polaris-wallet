@@ -1,4 +1,12 @@
-const TailwindButton = ({ children, isActive = true, ...props }) => {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  isActive?: boolean;
+}
+
+const Button: React.FC<ButtonProps> = ({
+  children,
+  isActive = true,
+  ...props
+}) => {
   const baseClasses = `
     bg-green-600 
     text-white 
@@ -36,4 +44,4 @@ const TailwindButton = ({ children, isActive = true, ...props }) => {
   );
 };
 
-export default TailwindButton;
+export default Button;

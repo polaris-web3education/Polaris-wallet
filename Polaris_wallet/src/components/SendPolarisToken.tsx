@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAccount, useWriteContract, useReadContract } from "wagmi";
 import { erc20Abi, parseEther } from "viem";
-import StyledButton from "@/styles/StyledButton";
+import Button from "./Button";
 
 export const SendPolarisToken = () => {
   const [recipient, setRecipient] = useState("");
@@ -54,7 +54,7 @@ export const SendPolarisToken = () => {
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
       />
-      <StyledButton onClick={handleSend}>送金</StyledButton>
+      <Button onClick={handleSend}>送金</Button>
     </div>
   );
 };

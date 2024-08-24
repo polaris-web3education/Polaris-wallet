@@ -10,19 +10,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Polaris Wallet",
-  description:
-    "Polaris Wallet",
+  description: "Polaris Wallet",
   twitter: {
     title: "Polaris Wallet",
-    description:
-      "Polaris wallet",
+    description: "Polaris wallet",
     images:
       "https://coinbase-smart-wallet-create-connect-sign.vercel.app/ogp.png",
   },
   openGraph: {
     title: "Polaris Wallet",
-    description:
-      "Polaris Wallet",
+    description: "Polaris Wallet",
     images:
       "https://coinbase-smart-wallet-create-connect-sign.vercel.app/ogp.png",
   },

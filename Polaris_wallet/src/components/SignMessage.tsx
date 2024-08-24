@@ -2,9 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import type { Hex } from "viem";
 import { useAccount, usePublicClient, useSignMessage } from "wagmi";
 import { SiweMessage } from "siwe";
-import StyledButton from "../styles/StyledButton";
-
-import Image from "next/image";
+import Button from "./Button";
 
 export function SignMessage() {
   const account = useAccount();
@@ -31,7 +29,7 @@ export function SignMessage() {
     if (!signature || !account.address) return;
 
     client
-      .verifyMessage({
+      ?.verifyMessage({
         address: account.address,
         message: message.prepareMessage(),
         signature,
@@ -45,14 +43,11 @@ export function SignMessage() {
 
   return (
     <div>
-      <StyledButton
+      <Button
         onClick={() => signMessage({ message: message.prepareMessage() })}
       >
-        <Image
-         
-        />
         Sign the message
-      </StyledButton>
+      </Button>
       <div style={{ textAlign: "center", marginTop: "5px" }}>
         Is valid:{" "}
         {valid !== undefined && (

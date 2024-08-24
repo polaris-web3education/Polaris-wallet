@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useConnect, useAccount, useDisconnect } from "wagmi";
-import StyledButton from "@/styles/StyledButton";
+import Button from "./Button";
 
 export function KyuzanWalletButton() {
   const { connectors, connect } = useConnect();
@@ -21,14 +21,14 @@ export function KyuzanWalletButton() {
 
   return (
     <>
-      <StyledButton
+      <Button
         onClick={createOrConnectCoinbaseSmartWallet}
         className={isConnected ? "inactive" : ""}
       >
         {isConnected
           ? "1. Wallet Connected"
           : "1. Create Wallet / Connect Wallet"}
-      </StyledButton>
+      </Button>
       {status === "connected" && (
         <>
           <div style={{ marginTop: "5px" }}> {address}</div>
