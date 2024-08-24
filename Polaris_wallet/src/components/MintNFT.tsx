@@ -1,5 +1,6 @@
 import { useAccount, useWriteContract } from "wagmi";
 import { abi, address } from "@/contracts/mintable-erc721";
+import { Button } from "./Button";
 
 export function MintNFT() {
   const { isConnected } = useAccount();
@@ -12,8 +13,8 @@ export function MintNFT() {
 
   return (
     <div>
-      <h2>NFTをミント</h2>
-      <button
+      <h2 className="text-2xl font-bold">NFTをミント</h2>
+      <Button
         onClick={() => {
           console.log(userAddress);
           if (!userAddress) return;
@@ -26,7 +27,7 @@ export function MintNFT() {
         }}
       >
         {isPending ? "ミント中..." : "NFTをミント"}
-      </button>
+      </Button>
       {isSuccess && <div>ミント成功！</div>}
     </div>
   );

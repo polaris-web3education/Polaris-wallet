@@ -30,9 +30,6 @@ export const metadata: Metadata = {
 export default function RootLayout(props: { children: ReactNode }) {
   return (
     <html lang="en">
-      {/* <Head>
-        <link rel="icon" href="/icon.ico" />
-      </Head> */}
       <body className={inter.className}>
         <Providers>{props.children}</Providers>
       </body>

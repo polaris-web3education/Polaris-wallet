@@ -42,10 +42,10 @@ function App() {
         <KyuzanWalletButton />
         {account.status === "connected" && (
           <>
-            <div style={{ marginTop: "40px" }}>
+            <div style={{ marginTop: "40px" }} className="flex flex-col gap-4">
               <MintNFT />
-              <SendPolarisToken />
               <OwnedNfts />
+              <SendPolarisToken />
             </div>
             <div style={{ marginTop: "40px" }}>
               <Button onClick={toggleSignMessage}>

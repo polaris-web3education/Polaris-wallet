@@ -8,7 +8,7 @@ export const SendPolarisToken = () => {
   const [amount, setAmount] = useState("");
   const { address } = useAccount();
 
-  const tokenAddress = "0xAaf6A734114437b719c28cfd44c0b2B515eD29be"; // Polarisトークンのコントラクトアドレスを設定してください
+  const tokenAddress = "0xAa3FDEB44B7bb1C0A366685c0A10b1a2aEa6548C";
 
   const { writeContract, isError } = useWriteContract();
 
@@ -40,7 +40,7 @@ export const SendPolarisToken = () => {
 
   return (
     <div>
-      <h2>Polarisトークン送金</h2>
+      <h2 className="text-2xl font-bold">Polarisトークン送金</h2>
       <p>
         残高: {balance ? parseFloat(balance.toString()) / 1e18 : "0"} POLARIS
       </p>
