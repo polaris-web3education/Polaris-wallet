@@ -24,12 +24,7 @@ export function Header() {
         >
           <li>
             <Link href="create wallet" style={{ color: "white" }}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="sendtoken" style={{ color: "white" }}>
-              wallet
+              Wallet
             </Link>
           </li>
           <li>
