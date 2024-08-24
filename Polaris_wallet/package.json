@@ -10,18 +10,20 @@
   },
   "dependencies": {
     "@tanstack/react-query": "5.0.5",
+    "bufferutil": "^4.0.7",
+    "clsx": "^2.1.1",
+    "encoding": "^0.1.13",
+    "lokijs": "^1.5.12",
     "next": "13.5.3",
+    "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "siwe": "^2.3.2",
     "styled-components": "^6.1.11",
-    "viem": "latest",
-    "wagmi": "latest",
-    "bufferutil": "^4.0.7",
-    "encoding": "^0.1.13",
-    "lokijs": "^1.5.12",
     "supports-color": "^9.4.0",
-    "utf-8-validate": "^6.0.3"
+    "utf-8-validate": "^6.0.3",
+    "viem": "latest",
+    "wagmi": "latest"
   },
   "devDependencies": {
     "@types/node": "^20.7.2",
@@ -29,9 +31,9 @@
     "@types/react-dom": "^18.2.8",
     "@wagmi/cli": "latest",
     "autoprefixer": "^10.4.20",
+    "pino-pretty": "^10.2.0",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10",
-    "typescript": "5.5.4",
-    "pino-pretty": "^10.2.0"
+    "typescript": "5.5.4"
   }
 }
