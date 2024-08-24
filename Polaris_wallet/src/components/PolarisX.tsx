@@ -1,4 +1,4 @@
-export function KomyX() {
+export function PolarisX() {
   return (
     <div style={{ textAlign: "center" }}>
       created by
