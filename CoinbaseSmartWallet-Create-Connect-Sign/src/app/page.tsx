@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useAccount } from "wagmi";
-import { PolarisWalletButton } from "@/components/KyuzanWalletButton";
+import { PolarisWalletButton } from "@/components/PolarisWalletButton";
 import { SignMessage } from "@/components/SignMessage";
 import { PolarisX } from "@/components/PolarisX";
 import { MintNFT } from "@/components/MintNFT";
